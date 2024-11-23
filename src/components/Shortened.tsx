@@ -49,15 +49,15 @@ export const Shortened = ({
       <button
         className={
           originalUrl.trim() === "" || !isValidUrl
-            ? "bg-gray-600 text-white font-semibold border rounded-lg w-full p-2"
-            : "bg-blue-500 text-white font-semibold border rounded-lg w-full p-2"
+            ? "bg-gray-600 text-white font-semibold border dark:border-transparent rounded-lg w-full p-2"
+            : "bg-blue-500 text-white font-semibold border dark:border-transparent rounded-lg w-full p-2"
         }
         disabled={originalUrl.trim() === "" || !isValidUrl}
         onClick={handleClick}
       >
         Shorten URL
       </button>
-      <p className="text-indigo-900">Example: https://wwww.google.com</p>
+      <p className="text-indigo-900 dark:text-white">Example: https://wwww.google.com</p>
     </div>
   );
 };
