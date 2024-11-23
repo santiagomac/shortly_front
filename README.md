@@ -8,11 +8,11 @@ The dashboard feature with metrics and analytics is not implemented yet. Coming 
 
 ## Features
 
-- URL shortener - [X]
-- URL validation - [X]
-- Dark Mode - [X]
-- URL shortened - [X]
-- URL copied to clipboard (Coming soon) - [X]
+- [x] URL shortener
+- [x] URL validation
+- [x] Dark Mode
+- [x] URL shortened
+- [ ] URL copied to clipboard (Coming soon)
 
 ## Tech Stack
 
