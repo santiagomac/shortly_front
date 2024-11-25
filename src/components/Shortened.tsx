@@ -28,6 +28,7 @@ export const Shortened = ({
   };
 
   const handleClick = () => {
+    setLoading(true);
     fetch(`${API_URL}?originalUrl=${originalUrl}`, {
       method: "POST",
     })
@@ -57,7 +58,9 @@ export const Shortened = ({
       >
         Shorten URL
       </button>
-      <p className="text-indigo-900 dark:text-white">Example: https://wwww.google.com</p>
+      <p className="text-indigo-900 dark:text-white">
+        Example: https://wwww.google.com
+      </p>
     </div>
   );
 };
