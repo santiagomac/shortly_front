@@ -1,0 +1,10 @@
+build:
+  baseDirectory: /
+  commands:
+    - npm install
+    - npm run build
+deployment:
+  preview:
+    branches: 
+      - main
+
