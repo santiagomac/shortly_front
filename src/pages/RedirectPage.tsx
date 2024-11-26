@@ -8,7 +8,11 @@ export const RedirectPage = () => {
   const { hash } = useParams();
 
   useEffect(() => {
-    fetch(`${API_URL}/${hash}`);
+    fetch(`${API_URL}/${hash}`)
+      .then((response) => response.json())
+      .then((data) => {
+        window.location.href = data.url;
+      });
   }, []);
 
   return (
