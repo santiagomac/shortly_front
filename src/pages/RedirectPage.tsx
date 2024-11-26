@@ -11,7 +11,7 @@ export const RedirectPage = () => {
     fetch(`${API_URL}/${hash}`)
       .then((response) => response.json())
       .then((data) => {
-        window.location.href = data.url;
+        window.location.href = data.originalUrl;
       });
   }, []);
 
